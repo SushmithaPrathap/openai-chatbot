@@ -1,8 +1,20 @@
+"use client";
+
 import { FC } from "react";
 import Image from "next/image";
 import logo from "../assets/book-logo.png";
 
 const NavBar: FC = () => {
+  const scrollFunc = (div: string) => {
+    const scrollDiv = document.getElementById(div);
+    if (scrollDiv) {
+      const sectionTop = scrollDiv.offsetTop;
+      window.scrollTo({
+        top: sectionTop,
+        behavior: "smooth",
+      });
+    }
+  };
   return (
     <div className="flex items-center justify-between bg-gray-800 w-full px-2 fixed">
       <div className="flex flex-row justify-center items-center">
@@ -19,10 +31,30 @@ const NavBar: FC = () => {
       </div>
 
       <div className="flex flex-row justify-center items-center gap-8">
-        <p className="text-white text-sm text-bold">Home</p>
-        <p className="text-white text-sm text-bold">Features</p>
-        <p className="text-white text-sm text-bold">Categories</p>
-        <p className="text-white text-sm text-bold">Pages</p>
+        <p
+          className="text-white text-sm text-bold cursor-pointer"
+          onClick={() => scrollFunc("home")}
+        >
+          Home
+        </p>
+        <p
+          className="text-white text-sm text-bold cursor-pointer"
+          onClick={() => scrollFunc("features")}
+        >
+          Features
+        </p>
+        <p
+          className="text-white text-sm text-bold cursor-pointer"
+          onClick={() => scrollFunc("categories")}
+        >
+          Categories
+        </p>
+        <p
+          className="text-white text-sm text-bold cursor-pointer"
+          onClick={() => scrollFunc("books")}
+        >
+          Books
+        </p>
       </div>
 
       <div className="flex flex-row justify-center items-center">

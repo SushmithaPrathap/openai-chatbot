@@ -4,11 +4,11 @@ import hero from "../assets/books-herotrans.png";
 
 const Hero: FC = () => {
   return (
-    <div className="flex justify-between items-center p-14">
+    <div id="home" className="flex justify-between items-center p-14">
       <div className="flex flex-col justify-center items-start flex-0.5 h-1/2">
         <p className="text-white text-5xl text-bold my-2">
           {" "}
-          Get a new book for you collection!
+          Get a new book for your collection!
         </p>
         {/* <p className="text-white text-2xl text-bold my-2">Your Gateway to Literary Wonders!</p> */}
         <p className="text-white text-lg my-2 w-5/6">

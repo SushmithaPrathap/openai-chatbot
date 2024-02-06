@@ -5,7 +5,7 @@ import { ScrollText, Truck, Users } from "lucide-react";
 
 const Features: FC = () => {
   return (
-    <div className="flex flex-1 justify-around items-start p-14 w-full">
+    <div id="features" className="flex flex-1 justify-around items-start p-14 w-full">
       <Image
         src={features}
         alt="Features of the book store"

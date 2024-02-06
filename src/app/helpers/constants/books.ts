@@ -1,4 +1,5 @@
 import { nanoid } from "nanoid";
+import { Atom } from 'lucide-react';
 
 export const books = [
   {
@@ -160,32 +161,5 @@ export const books = [
     Price: "$22.99",
     // Image: "https://example.com/gunsofaugust.jpg",
     Category: "History",
-  },
-];
-
-export const categories = [
-  {
-    id: "0",
-    category: "All Books",
-  },
-  {
-    id: "1",
-    category: "Science",
-  },
-  {
-    id: "2",
-    category: "History",
-  },
-  {
-    id: "3",
-    category: "Romance",
-  },
-  {
-    id: "4",
-    category: "Mystery",
-  },
-  {
-    id: "5",
-    category: "Fiction",
   },
 ];

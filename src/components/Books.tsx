@@ -1,10 +1,11 @@
 "use client";
 
-import { books, categories } from "@/app/helpers/constants/catergories";
+import { categories } from "@/app/helpers/constants/catergories";
 import { FC, useState, useEffect } from "react";
 import { BookMarked } from "lucide-react";
 import { Book } from "@/lib/validators/message";
 import { cn } from "@/lib/utils";
+import { books } from "@/app/helpers/constants/books";
 
 const Books: FC = () => {
   const [category, setCategory] = useState<string>("All Books");
@@ -21,7 +22,10 @@ const Books: FC = () => {
   };
 
   return (
-    <div className="flex flex-col bg-gray-600 m-5 p-10 rounded-xl">
+    <div
+      id="books"
+      className="flex flex-col bg-gray-600 m-5 p-10 rounded-xl mb-20"
+    >
       <div className="flex flex-row justify-between items-center">
         <p className="text-white text-3xl text-bold m-1">
           Our Best Selling Books

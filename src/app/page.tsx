@@ -1,6 +1,7 @@
 import Books from "@/components/Books";
 import Categories from "@/components/Categories";
 import Features from "@/components/Features";
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import NavBar from "@/components/NavBar";
 
@@ -12,6 +13,7 @@ export default function Home() {
       <Features />
       <Categories />
       <Books />
+      <Footer />
     </main>
   );
 }
