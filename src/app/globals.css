@@ -47,6 +47,10 @@ body {
   border-radius: 0.25rem;
 }
 
+.hero-main{
+  background-color: #EFF9FC;
+}
+
 /* 
 @tailwind base;
 @tailwind components;
