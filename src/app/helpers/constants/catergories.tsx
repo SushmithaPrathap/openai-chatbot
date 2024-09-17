@@ -4,7 +4,7 @@ export const categories = [
   {
     id: "0",
     icon: <Atom className="w-20 h-20" />,
-    category: "All Books",
+    category: "All",
   },
   {
     id: "1",

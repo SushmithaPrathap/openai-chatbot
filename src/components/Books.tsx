@@ -32,7 +32,7 @@ const Books: FC = () => {
         </p>
         <div className="flex flex-row justify-center items-center">
           {categories.map((item) => (
-            <button
+            <button id={item.id}
               onClick={() => click(item.category)}
               className={cn("text-white text-sm text-bold py-2 px-5", {
                 "bg-gradient-to-r from-[#92e5ff] to-cyan-500 text-gray-800  rounded-xl":
@@ -49,7 +49,7 @@ const Books: FC = () => {
         {array.map((item) => (
           <div
             key={item.id}
-            className="flex flex-col items-start justify-center w-56 rounded-xl p-2 bg-slate-400 m-2"
+            className="flex flex-col items-start justify-center w-56 min-h-fit rounded-xl p-4 bg-slate-400 m-2"
           >
             <div className="bg-gradient-to-r from-gray-500 to-gray-600 rounded-xl items-center justify-center flex m-4 p-6">
               <BookMarked className="w-28 h-36" />
@@ -58,9 +58,9 @@ const Books: FC = () => {
             <p className="text-red-600 text-sm text-bold m-1">
               By {item.Author}
             </p>
-            <div className="flex flex-row justify-between items-start w-full mt-1">
+            <div className="flex flex-row justify-between items-start w-full">
               <p className="text-red-600 text-sm m-1">{item.Price}</p>
-              <button className="bg-orange-400 text-white py-1 px-3 rounded-2xl text-xs">
+              <button className="bg-orange-400 text-white py-1 px-3 m-1 rounded-2xl text-xs">
                 Add Cart
               </button>
             </div>

@@ -24,8 +24,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Providers>
-          <Chat />
           <div className={inter.className}>{children}</div>
+          <Chat />
         </Providers>
       </body>
     </html>

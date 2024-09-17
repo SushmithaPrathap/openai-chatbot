@@ -1,5 +1,4 @@
 import { nanoid } from "nanoid";
-import { Atom } from 'lucide-react';
 
 export const books = [
   {
